@@ -1,0 +1,29 @@
+@import "compass/css3";
+ .feature .list-title {
+	 opacity: 0;
+	 transform: translateX(25px);
+	 transition: all 250ms ease-in-out;
+}
+ .feature.animated .list-title {
+	 opacity: 1;
+	 transform: translateX(0);
+}
+ .features-list__item {
+	 opacity: 0;
+	 transform: translateX(15px);
+	 transition: all 250ms ease-in-out;
+}
+ .features-list__item:nth-child(1) {
+	 transition-delay: 50ms;
+}
+ .features-list__item:nth-child(2) {
+	 transition-delay: 100ms;
+}
+ .features-list__item:nth-child(3) {
+	 transition-delay: 150ms;
+}
+ .features-list__item.animated {
+	 opacity: 1;
+	 transform: translateX(0);
+}
+ 
